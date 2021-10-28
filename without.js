@@ -4,7 +4,9 @@ const without = function(source, itemsToRemove) {
   for (const item of itemsToRemove) {
     if (result.includes(item)) {
       // Note to self, using anonymous function here allows you avoid passing source in the parameter
-      result = result.filter((n) => {return n != item});
+      result = result.filter((n) => {
+        return n !== item;
+      });
     }
   }
 
@@ -13,7 +15,7 @@ const without = function(source, itemsToRemove) {
 
 const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
-    console.log(String.fromCodePoint(128516) + ` Assertion Passed: [${array1}] === [${array2}]`)
+    console.log(String.fromCodePoint(128516) + ` Assertion Passed: [${array1}] === [${array2}]`);
   } else {
     console.log(String.fromCodePoint(128534) + ` Assertion Failed: [${array1}] !== [${array2}]`);
   }

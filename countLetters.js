@@ -23,7 +23,7 @@ const countLetters = function(string) {
 
 const sentence1 = '122333';
 const sentence2 = 'Hello World';
-const sentence3 = 'lighthouse in the house'
+const sentence3 = 'lighthouse in the house';
 
 const result1 = countLetters(sentence1);
 const result2 = countLetters(sentence2);

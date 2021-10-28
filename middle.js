@@ -9,7 +9,7 @@ const middle = function(array) {
     }
   }
   return result;
-}
+};
 
 
 const assertArraysEqual = function(array1, array2) {
